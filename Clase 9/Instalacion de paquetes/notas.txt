@@ -1,0 +1,54 @@
+A estas alturas te encontrarás con 2 tipos principales de comentarios por parte de los alumnos:
+
+
+Comentarios de alumnos que no entienden por qué estás hablando de páginas web, de vistas, de etiquetas html, cuando están en un curso de backend. 
+Comentarios de alumnos que consideran un motor de plantillas obsoleto, planteando “que ya tienen React, Vue, Angular” para ello. 
+
+diapo 14
+
+Tomaremos un espacio para explicar la utilidad de un motor de plantillas y por qué un buen desarrollador debe saber definir cuándo 
+utilizar una tecnología. 
+
+
+El enfoque de dinamismo.
+
+diapo 19
+
+NOTA: El recurso puede llegar a ser subjetivo ya que en realidad podemos utilizar React, Vue, Angular, para cualquiera de las tres opciones, 
+lo importante es hacer entender al estudiante que hay que ampliar nuestro criterio sobre la utilización de una tecnología. 
+Ante el posible escepticismo de los estudiantes, puedes apoyarte de estos planteamientos.
+
+Si en una empresa necesitan hacer una landing page, ¿Qué tan necesario sería levantar un proyecto de react completo para una única vista? 
+Si tu cliente te pide una agenda personalizada al 100% con diferentes módulos, notas, tareas, contactos, sistema de recordatorios,
+ ¿Realmente te tomarás el tiempo para levantar esto en plain javascript?
+ 
+Si tendré un website de dinamismo controlado para mostrar productos, o para mostrar diferentes mensajes o contenidos según sea el usuario, 
+pero no habrá una interacción tan compleja con éste y el contenido no cambiará tan drásticamente, seguro podemos utilizar un motor de plantillas. 
+
+
+diapo 25
+
+handlebars
+-------------------
+NOTA: (Ignorar si en versiones más nuevas no aplica). 
+El nombre de la carpeta layouts y el archivo main.handlebars deben respetar ese nombre para que el motor de plantillas reconozca 
+correctamente el marco inicial.
+NOTA 2: Cuida muy bien dejar los archivos en el nivel indicado, de otra manera no se leerá correctamente. Haz énfasis a los chicos de 
+la importancia del nombre de los archivos, carpetas, y el nivel de cada uno. 
+
+diapo 26
+
+ota que es la estructura de un html cualquiera, sin embargo, esta vez dentro de body colocamos con {{{}}} el nombre body 
+(única vez que encerraremos en tres llaves)
+
+Ahora, cada vista de views que vayamos a renderizar, se renderizará dentro de este body. De esta manera, 
+no tenemos que escribir una estructura html completa por cada vista que queramos trabajar
+
+
+NOTA 2: Menciona que body es la única etiqueta en handlebars que utiliza la triple llave {{{}}} el resto siempre son dos {{}}
+
+diapo 28
+
+npm install express express-handlebars
+
+// hablar de crear el metodo get
