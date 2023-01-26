@@ -1,0 +1,21 @@
+
+1- Ingresa a https://www.mongodb.com/download-center/community y descarga el community server con la versión de tu sistema operativo.
+
+MongoDB
+2- Da doble clic sobre el archivo .tgz si tu sistema es Mac para descomprimir el archivo descargado.
+
+3- Copia la carpeta descargada en tu directorio Home o donde quieras dejar todos los ejecutables de Mongo.
+
+4- Actualizar tu PATH con la ruta a la carpeta donde dejaste los archivos descomprimidos:
+a- Abre un terminal y corre sudo nano /etc/paths ve a la última línea del archivo y agrega toda la ruta a la carpeta /bin que movimos en el paso
+anterior.
+b- Presiona ctrl+x para salir e ingresa Y para guardar los cambios que acabas de hacer.
+c- Si ejecutas echo $PATH deberías tener la ruta que apunta a la carpeta /bin con los ejecutables de MongoDB.
+
+5- Para ejecutar MongoDB de forma local debes abrir una terminal y escribir mongod, mongod lo que hace es inicializar un servidor local de MongoDB en el puerto 27017. Si presionas ctrl+c o cierras la terminal el servidor local se dentendrá.
+
+6- Luego en una terminal aparte escribes mongo y das enter, mongo es la consola de MongoDB con la cual estaremos trabajando durante el curso. Si solamente escribimos mongo la consola esta se va a tratar de conectar al servidor local de MongoDB por el puerto 27017 que levantamos en el paso anterior con mongod si mongod no se está ejecutando saldrá un error de conexión.
+
+7- Durante el curso estaremos trabajando con MongoDB Atlas, para conectarnos desde la consola lo que debemos hacer es ejecutar mongo --user USUARIO_CREADO y luego el te pedirá el password.
+
+8- Si escribes show dbs te deberán salir las bases de datos que se encuentran en el cluster.
