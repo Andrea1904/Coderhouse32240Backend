@@ -1,0 +1,28 @@
+use bdPractica
+db.createCollectionMascotas
+db.Mascotas.insertOne({nombre:"paquita",especie:"oso",edad:"23"}) // insertamos un registro
+db.Mascotas.find({especie : "oso"}) // busca por campo
+db.Mascotas.estimatedDocumentCount() // cuenta los generales
+db.Mascotas..countDocuments({especie : "oso"}) // cuenta por cada uno 
+
+
+.countDocuments
+
+
+db.Estudiantes.insertMany([
+{nombre:"rocky1", apellido:"canino",curso: "10", edad:"14", correo: "123@123.com", sexo: "hombre"},
+{nombre:"rocky2", apellido:"canino",curso: "10", edad:"15", correo: "123@123.com", sexo: "hombre"},
+{nombre:"rocky3", apellido:"canino",curso: "10", edad:"16", correo: "123@123.com", sexo: "hombre"},
+{nombre:"rocky4", apellido:"canino",curso: "10", edad:"17", correo: "123@123.com", sexo: "hombre"},
+{nombre:"rocky5", apellido:"canino",curso: "10", edad:"18", correo: "123@123.com", sexo: "hombre"}])
+
+db.Estudiantes.insertOne({nombre:"alejo",apellido:"oso",curso:"23"})
+
+db.Estudiantes.find().limit(2)
+db.Estudiantes.find().skip(100)
+db.Estudiantes.find().limit(100)
+
+db.Estudiantes.find().sort({edad:-1})
+
+db.Estudiantes.find({sexo : {$exists:true }})
+db.Estudiantes.find({sexo : {$exists:false }})
