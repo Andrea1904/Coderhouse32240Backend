@@ -1,0 +1,25 @@
+{
+  "name": "persistencia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha index.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "artillery-plugin-metrics-by-endpoint": "^1.0.2",
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "express-compression": "^1.0.2",
+    "mocha": "^10.2.0",
+    "mongoose": "^7.0.3",
+    "nodemailer": "^6.9.1",
+    "twilio": "^4.9.0",
+    "winston": "^3.8.2"
+  }
+}
